@@ -17,7 +17,10 @@ parser.add_argument('--mask_dir', type=str, help='Directory path to save predict
 args = parser.parse_args()
 
 checkpoint = torch.load(args.path, map_location=device)
-
+new_state_dict = {}
+for key, value in checkpoint['model'].items():
+    new_key = key.replace('module.', '')  # remove prefix 'module.'
+    new_state_dict[new_key] = value
 model = smp.Unet(
     encoder_name="resnet50",        
     encoder_weights="imagenet",     
@@ -25,7 +28,7 @@ model = smp.Unet(
     classes=3     
 )
 model.to(device)
-model.load_state_dict(checkpoint["model"])
+model.load_state_dict(new_state_dict)
 
 
 
