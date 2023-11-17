@@ -16,7 +16,7 @@ parser.add_argument('--test_dir', type=str, help='Path to test data')
 parser.add_argument('--mask_dir', type=str, help='Directory path to save predicted masks')
 args = parser.parse_args()
 
-checkpoint = torch.load(args.checkpoint, map_location=device)
+checkpoint = torch.load(args.path, map_location=device)
 
 model = smp.Unet(
     encoder_name="resnet50",        
