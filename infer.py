@@ -10,7 +10,6 @@ import argparse
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# Load checkpoint
 parser = argparse.ArgumentParser(description='PolypSegment Inference')
 parser.add_argument('--path', type=str, help='Path to the model checkpoint')
 parser.add_argument('--test_dir', type=str, help='Directory path to test images')
@@ -19,7 +18,6 @@ args = parser.parse_args()
 
 checkpoint = torch.load(args.checkpoint, map_location=device)
 
-# Load model
 model = smp.Unet(
     encoder_name="resnet50",        
     encoder_weights="imagenet",     
@@ -32,7 +30,7 @@ model.load_state_dict(checkpoint['model'])
 
 
 test_transform = A.Compose([
-    A.Normalize(mean=(), std=()),
+    A.Normalize(),
     ToTensorV2(),
 ])
 
