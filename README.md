@@ -1,7 +1,6 @@
 # Guide to run infer.py
 
-This is an instruction to download the model checkpoint from GoogleDrive and save it to the `/kaggle/working/` directory in a Kaggle notebook.
-Cre : I have learned how to write inffer.py file from HDD
+Frisrly, you need to download the model checkpoint from GoogleDrive and save it to the `/kaggle/working/` directory in a Kaggle notebook.
 
 
 ```python
