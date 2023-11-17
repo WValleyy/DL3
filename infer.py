@@ -57,7 +57,7 @@ for i in os.listdir(args.test_dir):
     ori_w = ori_img.shape[0]
     ori_h = ori_img.shape[1]
     img = cv2.resize(ori_img, (testsize, testsize))
-    transformed = val_transform(image=img)
+    transformed = test_transform(image=img)
     input_img = transformed["image"]
     input_img = input_img.unsqueeze(0).to(device)
     with torch.no_grad():
