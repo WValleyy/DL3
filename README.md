@@ -31,7 +31,7 @@ Then clone my git repo and run
 !git clone https://github.com/WValleyy/DL3.git 
 ```
 ```python
-!mkdir predicted_mask # make dir for mask prediction
+!mkdir predicted_masks # make dir for mask prediction
 ```
 ```python
 !python /kaggle/working/DL3/infer.py --path '/kaggle/working/model.pth' --test_dir '/kaggle/input/bkai-igh-neopolyp/test/test' --mask_dir '/kaggle/working/predicted_mask'
