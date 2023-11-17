@@ -8,7 +8,7 @@ import requests
 import os
 
 # Replace YOUR_DRIVE_URL with the direct link to the Google Drive file
-drive_url = 'YOUR_DRIVE_URL'
+drive_url = 'DRIVE_URL'
 ''''
 https://drive.google.com/u/0/uc?id=1rE66914xj9HfNXFHGjtMxMq--Hbk3A69&export=download&confirm=t&uuid=2b4102a9\
     -5972-416b-97eb-88ba28ee326d&at=AB6BwCAGuaEHjfdCyfAwGaV0E-O9:1700047389408'](https://drive.google.com/uc?id=1ZJ5BpPlV6r5rkB2-sWncdtWi_IdYLE2b&export=download)](https://drive.google.com/uc?id=116OGkSfEFxcoAfcmAJ4Kj83oFANh7FgA&export=download
