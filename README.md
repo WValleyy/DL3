@@ -23,8 +23,9 @@ response = requests.get(drive_url)
 with open(os.path.join(save_dir, 'model.pth'), 'wb') as f:
     f.write(response.content)
 ```
+Then clone my git repo and run
 ```python
-!git clone https://github.com/WValleyy/DL3.git # clone my git repo 
+!git clone https://github.com/WValleyy/DL3.git 
 ```
 ```python
 !mkdir predicted_mask # make dir for mask prediction
