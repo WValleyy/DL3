@@ -23,6 +23,10 @@ response = requests.get(drive_url)
 with open(os.path.join(save_dir, 'model.pth'), 'wb') as f:
     f.write(response.content)
 ```
+Then install the lib
+```python
+!pip install segmentation-models-pytorch
+```
 Then clone my git repo and run
 ```python
 !git clone https://github.com/WValleyy/DL3.git 
