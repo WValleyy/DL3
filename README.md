@@ -7,7 +7,7 @@ This is an instruction to download the model checkpoint from GoogleDrive and sav
 import requests
 import os
 
-# Replace YOUR_DRIVE_URL with the direct link to the Google Drive file
+# Replace DRIVE_URL with link to the Google Drive file
 drive_url = 'DRIVE_URL'
 ''''
 https://drive.google.com/u/0/uc?id=1rE66914xj9HfNXFHGjtMxMq--Hbk3A69&export=download&confirm=t&uuid=2b4102a9\
