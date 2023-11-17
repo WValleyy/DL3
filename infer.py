@@ -25,7 +25,7 @@ model = smp.Unet(
     classes=3     
 )
 model.to(device)
-model.load_state_dict(checkpoint['model'])
+model.load_state_dict(checkpoint["model"])
 
 
 
