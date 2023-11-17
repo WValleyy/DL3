@@ -1,4 +1,4 @@
-# Instruction
+# Instruction to run on kaggle notebook
 
 Frisrly, you need to download the model checkpoint from GoogleDrive and save it to the `/kaggle/working/` directory in a Kaggle notebook.
 
