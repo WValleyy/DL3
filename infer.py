@@ -11,8 +11,8 @@ import argparse
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 parser = argparse.ArgumentParser(description='PolypSegment Inference')
-parser.add_argument('--path', type=str, help='Path to the model checkpoint')
-parser.add_argument('--test_dir', type=str, help='Directory path to test images')
+parser.add_argument('--path', type=str, help='Path to model checkpoint')
+parser.add_argument('--test_dir', type=str, help='Path to test data')
 parser.add_argument('--mask_dir', type=str, help='Directory path to save predicted masks')
 args = parser.parse_args()
 
