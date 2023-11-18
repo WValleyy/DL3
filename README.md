@@ -1,7 +1,7 @@
 # Instruction to run on kaggle notebook
 
 Frisrly, you need to add data of the competition, then download the model checkpoint from GoogleDrive and save it to the `/kaggle/working/` directory in a Kaggle notebook.
-#cre : my model check point score is not 0.76 thus i forgot to save my last model and kaggle auto remove it, hope you guys accept my score on leadbroad nah ._.
+#note : my model check point score is not 0.76 thus i forgot to save my last model and kaggle auto remove it, hope you guys accept my score on leadbroad nah ._.
 ```python
 import requests
 import os
